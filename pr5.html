@@ -1,0 +1,104 @@
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="stylesheet" href="po.css" type="text/css"> 
+  <title>7CHAPTERS</title>
+  <img src="logo.jpg" style="height: 75px; width: 100px;">
+  <meta charset="UTF-8">
+  </head>
+    <hr>
+<body>
+    <header>
+        <nav>
+            <ul id="idli">
+                <li id="idli"><a id="id1" href="Homepr.html"><h4>الرئيسية</h4></a></li>
+                <li id="idli"><a id="id1" href="pr2.html"><h4>عن <i>7CHAPTERS</i></h4></a></li>
+                <li id="idli"><a id="id1" href="page3.html"><h4>الكُتب</h4></a></li>
+                <li id="idli"><a id="id1" href="pr4.html"><h4>معلومات أكثر</h4></a></li>
+                <li id="idli"><a id="id1" href="pr5.html"><h4>أرائكم</h4></a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+<h1>استطلاع رأي</h1>
+<h6>لخدمتكم بشكل افضل يرجى تعبئة الاستطلاع التالي *</h6>
+
+<form>
+
+<fieldset id="بيانات شخصية:">
+
+<legend>بيانات شخصية</legend>
+<label>ادخل الايميل:</label>
+<label><input type ="input" id="id1" name="اسمك"></label>
+
+<br><br><br>
+
+<label>كلمة السر:</label>
+<label><input type="password" id="id2" name="pwd"></label>
+
+<br><br><br>
+<label>الاسم الاول:</label>
+<label><input type ="input" id="id6" name="اسم"></label>
+
+<br><br><br>
+
+<label>الاسم الاخير:</label>
+<label><input type="input" id="id7" name="اسم"></label>
+
+</fieldset>
+
+<br>
+<label for="الجنس"> الجنس:</label>
+<select id="الجنس" name="الجنس">
+<option value="انثى">انثى</option>
+<option valueذكر">ذكر</option>
+<option value="افضل عدم الاختيار"> افضل عدم الاختيار</option>
+</select>
+<br>
+<br>
+<label>هل تفضل اضافة كتب باللغة الانجليزية؟</label>
+<label><input id="نعم" name="A1" type="radio">نعم</label>
+<label><input id="لا" name="A1" type="radio">لا</label>
+
+<br><br>
+
+<label>التصنيف المفضل لك/ي:</label>
+<label><input id="رعب" name="a2" type="checkbox">رعب</label>
+<label><input id="خيال" name="a2" type="checkbox">خيال</label>
+<label><input id="بوليسية" name="a2" type="checkbox">بوليسية</label>
+<label><input id="دراما" name="a2" type="checkbox">دراما</label>
+<label><input id="مغامرات" name="a2" type="checkbox">مغامرات</label>
+<label><input id="شريحة من الحياة" name="a2" type="checkbox">شريحة من الحياة</label>
+<label><input id="شعر" name="a2" type="checkbox">شعر</label>
+<label><input id="يوميات" name="a2" type="checkbox">يوميات</label>
+<label><input id="اثارة و تشويق" name="a2" type="checkbox">اثارة و تشويق</label>
+<br><br>
+<label>اسم كتاب تريد/ي ان نضيفه الى موقعنا:</label>
+<label><input id="a3" name="اسم" type="input"></label>
+<br><br>
+
+<label>اسم كاتب تفضله:</label>
+<label><input id="a5" name="كاتب" type="input"></label>
+<br><br>
+
+<label>كيف تقييم تجربتك/ي : 100<input id="a4" name="تقييم" type="range" min="90" max="100" step="1">90</label>
+
+<br><br>
+
+<input type="button" onclick="alert('💙تم الارسال شكرا على تقييمكم')" value="send">
+
+<input id="a8" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()" type="reset"">
+</form>
+
+</body>
+
+<script>
+    function handleMouseOver(){
+        const subbut= document.querySelector('#a8')
+        subbut.style.backgroundColor='lightgrey';
+    }
+    function handleMouseOut(){
+        const subbut= document.querySelector('#a8')
+        subbut.style.backgroundColor='silver';
+    }
+</script>
+</html>

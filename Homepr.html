@@ -1,0 +1,108 @@
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="stylesheet" href="po.css" type="text/css"> 
+  <title>7CHAPTERS</title>
+  <img src="logo.jpg" style="height: 75px; width: 100px;">
+  <meta charset="UTF-8">
+
+  <title>sign up</title>
+  <style>
+   
+    .italic {
+      font-style: italic;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .cursive {
+      font-family: cursive;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    input[type="submit"],
+    h1 {
+      color: rgb(30, 30, 105); 
+    }
+
+    label[for="date"] {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<hr>
+
+<body>
+
+<header>
+    <nav>
+      <ul id="idli">
+        <li id="idli"><a id="id1" href="Homepr.html"><h4>الرئيسية</h4></a></li>
+        <li id="idli"><a id="id1" href="pr2.html"><h4>عن <i>7CHAPTERS</i></h4></a></li>
+        <li id="idli"><a id="id1" href="page3.html"><h4>الكُتب</h4></a></li>
+        <li id="idli"><a id="id1" href="pr4.html"><h4>معلومات أكثر</h4></a></li>
+        <li id="idli"><a id="id1" href="pr5.html"><h4>أرائكم</h4></a></li>
+    </ul>
+    </nav>
+</header>
+  <hr><br>
+
+
+  <h1><i>7CHAPTERS!</i></h1><br>
+  <p><h3>المكتبة القديمة، المخبأة عميقًا داخل غابة سحرية، على كتب سحرية تهمس بأسرار ممالك منسية منذ فترة طويلة وعوالم مسحورة لأولئك الشجعان الذين يجرؤون على البحث عنها.</h3></p>
+  <p><h4>انطلق <i>بخيالك </i>معنا...</h4></p>
+<br><br>
+
+<h1 class="underline">sign up</h1>
+
+  <form>
+    <fieldset>
+      <legend class="cursive">User Information</legend>
+
+      <label for="name" class="bold">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <br><br>
+
+      <label for="email" class="bold">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <br><br>
+
+      <label for="password" class="bold">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <br><br>
+
+     
+      <label for="color" class="bold">Color:</label>
+      <input input type="color" id="colorPicker" onchange="changeBackgroundColor()" name="color" >
+
+      <br><br>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date">
+
+    </fieldset>
+
+    <br>
+	<input type="submit" id="myButton" value="Submit" onclick="changeContent()">
+
+  </form>
+  <script>
+  
+    function changeBackgroundColor() {
+      var color = document.getElementById("colorPicker").value;
+      document.body.style.backgroundColor = color;
+    }
+	function changeContent() {
+      var button = document.getElementById("myButton");
+      button.value = "Clicked!";}
+	  
+  </script>
+</body>
+</html>
